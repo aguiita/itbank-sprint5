@@ -3,40 +3,396 @@
     <html lang="es">
     <head>
       <meta charset="UTF-8">
-      <title>Reporte de Transacciones para Nicolas</title>
+      <title>Reportes de Transacciones</title>
       <style>
-        table { width: 100%; border-collapse: collapse; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f4f4f4;
+          color: #333;
+        }
+        h1 {
+          color: #0056b3;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: left;
+        }
+        th {
+          background-color: #007bff;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        tr:hover {
+          background-color: #f1f1f1;
+        }
+        .rechazada {
+          background-color: #f8d7da;
+        }
       </style>
     </head>
     <body>
-      <h1>Reporte de Transacciones para Nicolas</h1>
-      <p>DNI: 29494777</p>
-      <p>Tipo: BLACK</p>
-      <table>
-        <tr>
-          <th>Fecha</th>
-          <th>Tipo de Operación</th>
-          <th>Estado</th>
-          <th>Monto</th>
-          <th>Razón</th>
-        </tr>
-        <tr>
-          <td>2024-10-01</td>
-          <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
-          <td>ACEPTADA</td>
-          <td>50000</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>2024-10-02</td>
-          <td>TRANSFERENCIA</td>
-          <td>RECHAZADA</td>
-          <td>600000</td>
-          <td>Transferencia supera el lÃ­mite</td>
-        </tr>
-      </table>
+      <h1>Reportes de Transacciones</h1>
+    
+        <h2>Cliente: Nicolas GastÃ³n (DNI: 29494777)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> BLACK<br>
+          <strong>Tarjetas de Crédito:</strong> 5<br>
+          <strong>Chequeras:</strong> 2<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>10/10/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>ACEPTADA</td>
+              <td>$1,000</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>10/10/2022</td>
+              <td>ALTA_CHEQUERA</td>
+              <td>RECHAZADA</td>
+              <td>$9,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Pedro Fernandez (DNI: 29712345)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> BLACK<br>
+          <strong>Tarjetas de Crédito:</strong> 2<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 2<br>
+          Transacciones rechazadas: 0
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>30/10/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>ACEPTADA</td>
+              <td>$4,000</td>
+              <td></td>
+            </tr>
+            <tr class="">
+              <td>30/10/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>ACEPTADA</td>
+              <td>$5,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Claudia Santos (DNI: 27654321)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> GOLD<br>
+          <strong>Tarjetas de Crédito:</strong> 1<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>01/11/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>ACEPTADA</td>
+              <td>$5,000</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>01/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>RECHAZADA</td>
+              <td>$15,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Felipe Hernandez (DNI: 28765432)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> CLASSIC<br>
+          <strong>Tarjetas de Crédito:</strong> 0<br>
+          <strong>Chequeras:</strong> 0<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>05/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>ACEPTADA</td>
+              <td>$5,000</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>05/11/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>RECHAZADA</td>
+              <td>$7,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: LucÃ­a Martinez (DNI: 12345678)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> GOLD<br>
+          <strong>Tarjetas de Crédito:</strong> 2<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 2<br>
+          Transacciones rechazadas: 0
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>02/11/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>ACEPTADA</td>
+              <td>$3,000</td>
+              <td></td>
+            </tr>
+            <tr class="">
+              <td>02/11/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>ACEPTADA</td>
+              <td>$4,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Javier Lopez (DNI: 34567890)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> CLASSIC<br>
+          <strong>Tarjetas de Crédito:</strong> 0<br>
+          <strong>Chequeras:</strong> 0<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>03/11/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>ACEPTADA</td>
+              <td>$2,000</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>03/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>RECHAZADA</td>
+              <td>$6,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Sofia PÃ©rez (DNI: 87654321)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> GOLD<br>
+          <strong>Tarjetas de Crédito:</strong> 1<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 2<br>
+          Transacciones rechazadas: 0
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>04/11/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>ACEPTADA</td>
+              <td>$3,000</td>
+              <td></td>
+            </tr>
+            <tr class="">
+              <td>04/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>ACEPTADA</td>
+              <td>$2,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Carlos GÃ³mez (DNI: 65432109)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> BLACK<br>
+          <strong>Tarjetas de Crédito:</strong> 3<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>05/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>ACEPTADA</td>
+              <td>$10,000</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>05/11/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>RECHAZADA</td>
+              <td>$25,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Ana Mendoza (DNI: 23456789)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> GOLD<br>
+          <strong>Tarjetas de Crédito:</strong> 1<br>
+          <strong>Chequeras:</strong> 1<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 2<br>
+          Transacciones rechazadas: 0
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>06/11/2022</td>
+              <td>RETIRO_EFECTIVO_CAJERO_AUTOMATICO</td>
+              <td>ACEPTADA</td>
+              <td>$3,000</td>
+              <td></td>
+            </tr>
+            <tr class="">
+              <td>06/11/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>ACEPTADA</td>
+              <td>$4,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
+        <h2>Cliente: Fernando RamÃ­rez (DNI: 34567890)</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> CLASSIC<br>
+          <strong>Tarjetas de Crédito:</strong> 0<br>
+          <strong>Chequeras:</strong> 0<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: 2<br>
+          Transacciones aceptadas: 1<br>
+          Transacciones rechazadas: 1
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>
+            <tr class="">
+              <td>07/11/2022</td>
+              <td>COMPRA_EN_COMERCIO</td>
+              <td>ACEPTADA</td>
+              <td>$1,500</td>
+              <td></td>
+            </tr>
+            <tr class="rechazada">
+              <td>07/11/2022</td>
+              <td>TRANSFERENCIA</td>
+              <td>RECHAZADA</td>
+              <td>$6,000</td>
+              <td></td>
+            </tr>
+        </table>
+        <hr>
+        
     </body>
     </html>
     

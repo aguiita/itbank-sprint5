@@ -6,45 +6,100 @@ def cargar_datos(archivo):
     with open(archivo, 'r') as f:
         return json.load(f)
 
+# Formatear la fecha
+def formatear_fecha(fecha):
+    return datetime.strptime(fecha, "%d/%m/%Y %H:%M:%S").strftime("%d/%m/%Y")
+
 # Generar reporte HTML
-def generar_reporte(cliente):
-    html = f'''
+def generar_reporte(clientes):
+    html = '''
     <!DOCTYPE html>
     <html lang="es">
     <head>
       <meta charset="UTF-8">
-      <title>Reporte de Transacciones para {cliente['nombre']}</title>
+      <title>Reportes de Transacciones</title>
       <style>
-        table {{ width: 100%; border-collapse: collapse; }}
-        th, td {{ border: 1px solid #ccc; padding: 8px; text-align: left; }}
-        th {{ background-color: #f2f2f2; }}
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f4f4f4;
+          color: #333;
+        }
+        h1 {
+          color: #0056b3;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: left;
+        }
+        th {
+          background-color: #007bff;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        tr:hover {
+          background-color: #f1f1f1;
+        }
+        .rechazada {
+          background-color: #f8d7da;
+        }
       </style>
     </head>
     <body>
-      <h1>Reporte de Transacciones para {cliente['nombre']}</h1>
-      <p>DNI: {cliente['DNI']}</p>
-      <p>Tipo: {cliente['tipo']}</p>
-      <table>
-        <tr>
-          <th>Fecha</th>
-          <th>Tipo de Operación</th>
-          <th>Estado</th>
-          <th>Monto</th>
-          <th>Razón</th>
-        </tr>'''
+      <h1>Reportes de Transacciones</h1>
+    '''
 
-    for transaccion in cliente['transacciones']:
+    for cliente in clientes:
+        total_transacciones = len(cliente['transacciones'])
+        aceptadas = sum(1 for t in cliente['transacciones'] if t['estado'] == 'ACEPTADA')
+        rechazadas = total_transacciones - aceptadas
+
         html += f'''
-        <tr>
-          <td>{transaccion['fecha']}</td>
-          <td>{transaccion['tipo']}</td>
-          <td>{transaccion['estado']}</td>
-          <td>{transaccion['monto']}</td>
-          <td>{transaccion['razon']}</td>
-        </tr>'''
-    
+        <h2>Cliente: {cliente['nombre']} {cliente['apellido']} (DNI: {cliente['DNI']})</h2>
+        <div>
+          <strong>Tipo de Cliente:</strong> {cliente['tipo']}<br>
+          <strong>Tarjetas de Crédito:</strong> {cliente['totalTarjetasDeCreditoActualmente']}<br>
+          <strong>Chequeras:</strong> {cliente['totalChequerasActualmente']}<br>
+          <strong>Resumen de Transacciones:</strong><br>
+          Total de transacciones: {total_transacciones}<br>
+          Transacciones aceptadas: {aceptadas}<br>
+          Transacciones rechazadas: {rechazadas}
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo de Operación</th>
+            <th>Estado</th>
+            <th>Monto</th>
+            <th>Razón</th>
+          </tr>'''
+
+        for transaccion in cliente['transacciones']:
+            estado_clase = "rechazada" if transaccion['estado'] == "RECHAZADA" else ""
+            html += f'''
+            <tr class="{estado_clase}">
+              <td>{formatear_fecha(transaccion['fecha'])}</td>
+              <td>{transaccion['tipo']}</td>
+              <td>{transaccion['estado']}</td>
+              <td>${transaccion['monto']:,}</td>
+              <td>{transaccion.get('razon', '')}</td>
+            </tr>'''
+        
+        html += '''
+        </table>
+        <hr>
+        '''
+
     html += '''
-      </table>
     </body>
     </html>
     '''
