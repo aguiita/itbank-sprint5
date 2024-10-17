@@ -67,7 +67,7 @@ def generar_reporte(clientes):
         <h2>Cliente: {cliente['nombre']} {cliente['apellido']} (DNI: {cliente['DNI']})</h2>
         <div>
           <strong>Tipo de Cliente:</strong> {cliente['tipo']}<br>
-          <strong>Tarjetas de Crédito:</strong> {cliente['totalTarjetasDeCreditoActualmente']}<br>
+          <strong>Tarjetas de Credito:</strong> {cliente['totalTarjetasDeCreditoActualmente']}<br>
           <strong>Chequeras:</strong> {cliente['totalChequerasActualmente']}<br>
           <strong>Resumen de Transacciones:</strong><br>
           Total de transacciones: {total_transacciones}<br>
@@ -77,7 +77,7 @@ def generar_reporte(clientes):
         <table>
           <tr>
             <th>Fecha</th>
-            <th>Tipo de Operación</th>
+            <th>Tipo de Operacion</th>
             <th>Estado</th>
             <th>Monto</th>
             <th>Razón</th>
