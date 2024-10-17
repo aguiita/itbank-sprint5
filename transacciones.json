@@ -1,0 +1,26 @@
+{
+    "numero": 100001,
+    "nombre": "Nicolas",
+    "apellido": "Gastón",
+    "DNI": "29494777",
+    "tipo": "BLACK",
+    "transacciones": [
+      {
+        "estado": "ACEPTADA",
+        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "cuentaNumero": 190,
+        "monto": 50000,
+        "fecha": "2024-10-01",
+        "razon": ""
+      },
+      {
+        "estado": "RECHAZADA",
+        "tipo": "TRANSFERENCIA",
+        "cuentaNumero": 190,
+        "monto": 600000,
+        "fecha": "2024-10-02",
+        "razon": "Transferencia supera el límite"
+      }
+    ]
+  }
+  
