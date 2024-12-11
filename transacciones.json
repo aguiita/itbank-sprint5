@@ -10,21 +10,21 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 190,
         "cupoDiarioRestante": 9000,
         "monto": 1000,
-        "fecha": "10/10/2022 16:00:55",
+        "fecha": "10/11/2024 16:00:55",
         "numero": 1,
         "saldoEnCuenta": 100000
       },
       {
         "estado": "RECHAZADA",
-        "tipo": "ALTA_CHEQUERA",
+        "tipo": "ALTA CHEQUERA",
         "cuentaNumero": 190,
         "cupoDiarioRestante": 3000,
         "monto": 9000,
-        "fecha": "10/10/2022 16:00:55",
+        "fecha": "10/11/2024 16:00:55",
         "numero": 2,
         "saldoEnCuenta": 100000
       }
@@ -41,11 +41,11 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 197,
         "cupoDiarioRestante": 15000,
         "monto": 4000,
-        "fecha": "30/10/2022 09:00:00",
+        "fecha": "30/11/2024 09:00:00",
         "numero": 1,
         "saldoEnCuenta": 90000
       },
@@ -55,7 +55,7 @@
         "cuentaNumero": 197,
         "cupoDiarioRestante": 15000,
         "monto": 5000,
-        "fecha": "30/10/2022 09:30:00",
+        "fecha": "30/11/2024 09:30:00",
         "numero": 2,
         "saldoEnCuenta": 85000
       }
@@ -72,21 +72,21 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 198,
         "cupoDiarioRestante": 10000,
         "monto": 5000,
-        "fecha": "01/11/2022 14:00:00",
+        "fecha": "01/11/2024 14:00:00",
         "numero": 1,
         "saldoEnCuenta": 70000
       },
       {
         "estado": "RECHAZADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 198,
         "cupoDiarioRestante": 10000,
         "monto": 15000,
-        "fecha": "01/11/2022 14:30:00",
+        "fecha": "01/11/2024 14:30:00",
         "numero": 2,
         "saldoEnCuenta": 65000
       }
@@ -103,11 +103,11 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 199,
         "cupoDiarioRestante": 6000,
         "monto": 5000,
-        "fecha": "05/11/2022 10:00:00",
+        "fecha": "05/11/2024 10:00:00",
         "numero": 1,
         "saldoEnCuenta": 18000
       },
@@ -117,7 +117,7 @@
         "cuentaNumero": 199,
         "cupoDiarioRestante": 6000,
         "monto": 7000,
-        "fecha": "05/11/2022 10:30:00",
+        "fecha": "05/11/2024 10:30:00",
         "numero": 2,
         "saldoEnCuenta": 13000
       }
@@ -134,11 +134,11 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 200,
         "cupoDiarioRestante": 12000,
         "monto": 3000,
-        "fecha": "02/11/2022 11:00:00",
+        "fecha": "02/11/2024 11:00:00",
         "numero": 1,
         "saldoEnCuenta": 45000
       },
@@ -148,7 +148,7 @@
         "cuentaNumero": 200,
         "cupoDiarioRestante": 12000,
         "monto": 4000,
-        "fecha": "02/11/2022 11:15:00",
+        "fecha": "02/11/2024 11:15:00",
         "numero": 2,
         "saldoEnCuenta": 41000
       }
@@ -165,21 +165,21 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 201,
         "cupoDiarioRestante": 5000,
         "monto": 2000,
-        "fecha": "03/11/2022 10:00:00",
+        "fecha": "03/11/2024 10:00:00",
         "numero": 1,
         "saldoEnCuenta": 15000
       },
       {
         "estado": "RECHAZADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 201,
         "cupoDiarioRestante": 5000,
         "monto": 6000,
-        "fecha": "03/11/2022 10:15:00",
+        "fecha": "03/11/2024 10:15:00",
         "numero": 2,
         "saldoEnCuenta": 13000
       }
@@ -200,17 +200,17 @@
         "cuentaNumero": 202,
         "cupoDiarioRestante": 15000,
         "monto": 3000,
-        "fecha": "04/11/2022 12:00:00",
+        "fecha": "04/11/2024 12:00:00",
         "numero": 1,
         "saldoEnCuenta": 70000
       },
       {
         "estado": "ACEPTADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 202,
         "cupoDiarioRestante": 15000,
         "monto": 2000,
-        "fecha": "04/11/2022 12:30:00",
+        "fecha": "04/11/2024 12:30:00",
         "numero": 2,
         "saldoEnCuenta": 68000
       }
@@ -227,21 +227,21 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 203,
         "cupoDiarioRestante": 20000,
         "monto": 10000,
-        "fecha": "05/11/2022 10:00:00",
+        "fecha": "05/11/2024 10:00:00",
         "numero": 1,
         "saldoEnCuenta": 200000
       },
       {
         "estado": "RECHAZADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 203,
         "cupoDiarioRestante": 20000,
         "monto": 25000,
-        "fecha": "05/11/2022 10:15:00",
+        "fecha": "05/11/2024 10:15:00",
         "numero": 2,
         "saldoEnCuenta": 190000
       }
@@ -258,11 +258,11 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "RETIRO_EFECTIVO_CAJERO_AUTOMATICO",
+        "tipo": "RETIRO EFECTIVO CAJERO AUTOMATICO",
         "cuentaNumero": 204,
         "cupoDiarioRestante": 12000,
         "monto": 3000,
-        "fecha": "06/11/2022 11:00:00",
+        "fecha": "06/11/2024 11:00:00",
         "numero": 1,
         "saldoEnCuenta": 90000
       },
@@ -272,7 +272,7 @@
         "cuentaNumero": 204,
         "cupoDiarioRestante": 12000,
         "monto": 4000,
-        "fecha": "06/11/2022 11:30:00",
+        "fecha": "06/11/2024 11:30:00",
         "numero": 2,
         "saldoEnCuenta": 86000
       }
@@ -289,11 +289,11 @@
     "transacciones": [
       {
         "estado": "ACEPTADA",
-        "tipo": "COMPRA_EN_COMERCIO",
+        "tipo": "COMPRA EN COMERCIO",
         "cuentaNumero": 205,
         "cupoDiarioRestante": 5000,
         "monto": 1500,
-        "fecha": "07/11/2022 15:00:00",
+        "fecha": "07/11/2024 15:00:00",
         "numero": 1,
         "saldoEnCuenta": 12000
       },
@@ -303,7 +303,7 @@
         "cuentaNumero": 205,
         "cupoDiarioRestante": 5000,
         "monto": 6000,
-        "fecha": "07/11/2022 15:15:00",
+        "fecha": "07/11/2024 15:15:00",
         "numero": 2,
         "saldoEnCuenta": 10500
       }

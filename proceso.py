@@ -20,38 +20,70 @@ def generar_reporte(clientes):
       <title>Reportes de Transacciones</title>
       <style>
         body {
-          font-family: Arial, sans-serif;
-          margin: 20px;
-          background-color: #f4f4f4;
-          color: #333;
-        }
-        h1 {
-          color: #0056b3;
-        }
-        table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 20px;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        th, td {
-          border: 1px solid #ddd;
-          padding: 12px;
-          text-align: left;
-        }
-        th {
-          background-color: #007bff;
-          color: white;
-        }
-        tr:nth-child(even) {
-          background-color: #f9f9f9;
-        }
-        tr:hover {
-          background-color: #f1f1f1;
-        }
-        .rechazada {
-          background-color: #f8d7da;
-        }
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #004080;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f5ff;
+    }
+    .rechazada {
+      background-color: #ffcccc !important;
+      color: #b30000;
+    }
+    .info {
+      background-color: #e6f7ff;
+      color: #004080;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #f0f2f5;
+      font-size: 0.85rem;
+      color: #666;
+    }
       </style>
     </head>
     <body>
